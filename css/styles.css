@@ -1,134 +1,87 @@
+/*GLOBAL RESET*/
 * {
   margin: 0;
   padding: 0;
 }
 
-body, html {
-  height: 100%;
+/*GENERAL STYLE*/
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+
+/*img {
+  display: block;
+  border: 0;
   width: 100%;
+  height: auto;
+}*/
+
+.name {
+  background: #343a40;
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
 }
-#content {
+.title {
+  background: #000;
+  color: #fff;
+  font-size: 1.25em;
+}
+i {
+  font-size: 2em;
+  padding-right: .50em;
+}
+
+.social-icon {
+  background: #333;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1.2em;
+  
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-instagram {
+  color: #ffdc7d;
+}
+.fa-github {
+  color:#6e5494;
+}
+.fa-codepen {
+  color: firebrick;
+}
+.fa-linkedin {
+  color: #0077B5;
+}
+  
+#main ul {
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: (100px, auto);
-  /*grid-gap: 10px;*/
-  max-width: 960px;
-  margin: 0 auto;
-  grid-template-areas:
-  "header title title social social"
-  "header banner banner banner banner"
-  "header home resume work contact"
-  "homeCon homeCon homeCon homeCon homeCon"
-  "resumeCon resumeCon resumeCon resumeCon resumeCon"
-  "workCon workCon workCon workCon workCon"
-  "contactCon contactCon contactCon contactCon contactCon"
-  "footer footer footer footer footer";
-  }
-  
- 
-  
-    /*GRID AREA SETUP*/
-  #home {grid-area: homeCon;}
-  #resume {grid-area: resumeCon;}
-  #work {grid-area: workCon;}
-  #contact {grid-area: contactCon;}
-  .header{grid-area: header;}
-  /*.banner{grid-area:banner;}*/
-  .social{grid-area: social;}
-  .home{grid-area: home;}
-  .resume{grid-area: resume;}
-  .work {grid-area: work;}
-  .contact {grid-area: contact;}
-  footer {grid-area: footer;}
-
-  #home {
-    background: dodgerblue;
-    color: white;
-  }
- .home {
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
-   background: dodgerblue;
-   color:white;
- }
-
-  .title {
-    grid-area: title;
-    font-size: 4em;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background: #333;
-    color: white;
-    font-weight: bolder;
-    text-align: center;
-  }
-
-  .banner {
-    grid-area: banner;
-    font-size: 2em;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    color: white;
-  }
-  .header img {
-    width: 100%;
-    height: 100%;
-  }
-    
-  .header {
-    background-color: #000;
-  }
-  .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background: #333;
-    font-size: 30px;
-  }
-
-  .fa-twitter{
-    color:#1da1f2;
-    padding-right: 10px;
-  }
-  .fa-instagram {
-    color: #ffdc7d;
-    padding-right: 10px;
-  }
-  .fa-linkedin {
-    color: #0077b5;
-    padding-right: 10px;
-  }
-  .fa-codepen {
-    color: #ff3c41;
-    padding-right: 10px;
-  }
-  .fa-github {
-    color: #6e5494;
-    padding-right: 10px;
-  }
-
-  .fa {
-    padding-right: 10px;
-  }
-
-   
-
-    
-    
-    
-
-
-/*DISCARD AFTER SITES COMPLETED*/
-#content > * {
- border: 1px solid #000;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100px;
+  width: auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
 }
 
+#home {background: #428bca;}
+#home:hover {background: #0d47a1;}
+#resume {background: #00c851;}
+#resume:hover {background: #007e33;}
+#work {background: #ffbb33;}
+#work:hover {background: #ff8800;}
+#contact {background: #4b515d;}
+#contact:hover {background: #212121;}
+  
+  
 
 
 
