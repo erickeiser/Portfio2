@@ -16,6 +16,10 @@ h1,h2,h3,h4,h5,h6 {
   padding: 1em 0;
 }
 
+img, .profile-image {
+  display: none;
+}
+
 /*img {
   display: block;
   border: 0;
@@ -26,8 +30,9 @@ h1,h2,h3,h4,h5,h6 {
 .name {
   background: #343a40;
   font-size: 3em;
-  color: #fff;
+  color: #ccc;
   text-align: center;
+  text-transform: uppercase
 }
 .title {
   background: #000;
@@ -39,6 +44,8 @@ i {
   padding-right: .50em;
 }
 
+/*/////////////////////////////////////////////////////////////////////////////////////SOCIAL ICONS////////////////////////////////////*/
+
 .social-icon {
   background: #333;
   margin: 0;
@@ -47,34 +54,47 @@ i {
   display: flex;
   justify-content: center;
   padding: 1.2em;
-  
 }
-  /*SOCIAL ICON COLORING  */
 .fa-twitter {color: #1da1f2;}
 .fa-instagram {color: #ffdc7d;}
 .fa-github {color:#6e5494;}
 .fa-codepen {color: firebrick;}
 .fa-linkedin {color: #0077B5;}
-
- img {
-  display:none;
+  
+ 
+  .profile-image {
+  display:hidden;
 }
+
+.about-me, .skills {
+  text-align: center;
+  padding: 0 5%;
+  font-size: 2.5rem;
+}
+
+.skills{
+  background: #ccc;
+  color: #000;
+}
+  
+  
+
+
+
   
 /* MAIN CONTENT COLOR BLOCK */
 #home {
-  background:#333
+  background:#428bca;
 }
+#home .home {
+  color: #fff;
+}
+  
 
 
 
 
-#home:hover {background: #0d47a1;}
-#resume {background: #333;}
-#resume:hover {background: #007e33;}
-#work {background: #333;}
-#work:hover {background: #ff8800;}
-#contact {background: #333;}
-#contact:hover {background: #212121;}
+
 
 #main {
   display: grid;
@@ -93,6 +113,7 @@ i {
  left: 50%;
  color: #428bca;
 }
+
 
 #resume > i {
   font-size: 2rem;
@@ -123,6 +144,7 @@ i {
 
  #home-content {
    background: #428bca;
+   color: #ccc;
  }
 
   

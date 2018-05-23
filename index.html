@@ -5,51 +5,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Rresponsive Design</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
- <body>
+<body>
   <div id='wrapper'>
-   <img src="/img/profile.jpg" alt="">
+    <img class="profile-image" src="/img/profile.jpg" alt="">
     <h1 class="name">Eric Keiser</h1>
     <h3 class="title">Web Developer</h3>
   </div>
   <div id="main">
-    
-      <div id="home"> <i class="fas fa-home"></i></div>
-      <div id="resume"> <i class="fas fa-graduation-cap"></i></div>
-      <div id="work"> <i class="fas fa-cog"></i></div>
-      <div id="contact"> <i class="fas fa-paper-plane"></i></div>
-    </div>
 
-    <div id="home-content" aria-expanded="true">
-      <div class="card-body">
-        <h2>Welcome to my page</h2>
-         
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ea debitis similique labore ut fuga suscipit quibusdam doloremque blanditiis tempora!</p>
-      </div>
-      <hr>
-      <div class="card card-body">
-        <h4>My Skills</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, in.</p>
-      </div>
+    <div id="home" class="port-item" data-target="#home-content"> <i class="fas fa-home home"></i></div>
+    <div id="resume" class="port-item1"> <i class="fas fa-graduation-cap"></i></div>
+    <div id="work" class="port-item"> <i class="fas fa-cog"></i></div>
+    <div id="contact" class="port-item"> <i class="fas fa-paper-plane"></i></div>
+  </div>
 
+  <!--HOME CONTENT-->
+  <div id="home-content">
+    <div class="collapse">
+      <h2>About</h2>
+
+      <p class="about-me">Hey There! I'm Eric and I'm a web developer from Chattanooga Tn. I love designing websites and using emerging technology
+        to push the limit of what is possible today. In my free time you can find me hiking with my family and taking advantage
+        of all the outdoor activities that Chattanooga has to offer. Being part of Gig City and the Outdoor City makes me
+        proud to be a Chattanoogan</p>
     </div>
-     
-      
-    
-   
-   
-   <footer id="footer">
-     <ul class="social-icon">
-     <li><i class="fab fa-twitter fa-3x"></i></li>
-     <li><i class="fab fa-instagram fa-3x"></i></li>
-     <li><i class="fab fa-github fa-3x"></i></li>
-     <li><i class="fab fa-codepen fa-3x"></i></li>
-     <li><i class="fab fa-linkedin fa-3x"></i></li>
+    <div class="collapse skills">
+      <h4>Skills Matrix</h4>
+      <p>Below represents my current skill level in each area of study. Make sure to check back periodically as I am adding new skills every day. </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer id="footer">
+    <ul class="social-icon">
+      <li><i class="fab fa-twitter fa-3x"></i></li>
+      <li><i class="fab fa-instagram fa-3x"></i></li>
+      <li><i class="fab fa-github fa-3x"></i></li>
+      <li><i class="fab fa-codepen fa-3x"></i></li>
+      <li><i class="fab fa-linkedin fa-3x"></i></li>
     </ul>
-   </footer>
- </body>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
