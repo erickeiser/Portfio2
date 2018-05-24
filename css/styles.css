@@ -8,6 +8,9 @@ html, body {
   box-sizing: border-box;
   background: #333;
 }
+ul {
+  list-style: none;
+}
 
 /*GENERAL STYLE*/
 h1,h2,h3,h4,h5,h6 {
@@ -30,7 +33,7 @@ img, .profile-image {
 .name {
   background: #343a40;
   font-size: 3em;
-  color: #ccc;
+  color: #fff;
   text-align: center;
   text-transform: uppercase
 }
@@ -73,7 +76,7 @@ i {
 }
 
 .skills{
-  background: #ccc;
+  background: #fff;
   color: #000;
 }
   
@@ -144,8 +147,89 @@ i {
 
  #home-content {
    background: #428bca;
-   color: #ccc;
+   color: #fff;
  }
+
+ #skills-matrix { 
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column: 1/2;
+   grid-row: 1/3;
+  }
+
+  .skills-title {
+    display: inherit;
+    grid-column: 1/3;
+    padding-bottom: 30px;
+  }
+
+  #skills li {
+    display: inherit;
+    text-align: left;
+  }
+
+
+   
+
+ /* animated bars  */
+ 
+
+
+/*	3. Skills
+ ================================================================================ */
+#skills {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
+  background: #333;
+}
+#skills li {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 6px;
+  list-style:none;
+  font-size: .5em;
+}
+#skills li .bar-container, #skills li .bar {
+  position: absolute;
+  left: 0;
+  height: 5px;
+  border-radius: 5px;
+  content: "";
+}
+#skills li .bar-container {
+  bottom: -8px;
+  width: 100%;
+  background-color: #333;
+  text-align: right;
+}
+#skills li .bar-container .bar {
+  top: 0;
+}
+#skills li .bar-container .pct {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  font-size: 15px;
+}
+
+ i.fab.fa-html5 {
+  color: #e34f26;
+}
+i.fab.fa-js {
+  color: #f7df1e; 
+}
+i.fas.fa-database {
+  color: #00758f;
+}
+i.fab.fa-css3-alt {
+  color: #146eb4;
+}
+
+
+
 
   
   
