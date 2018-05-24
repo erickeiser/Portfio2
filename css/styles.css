@@ -2,10 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
  
 }
 html, body {
-  box-sizing: border-box;
+  
   background: #333;
 }
 ul {
@@ -46,6 +47,7 @@ i {
   font-size: 2em;
   padding-right: .50em;
 }
+
 
 /*/////////////////////////////////////////////////////////////////////////////////////SOCIAL ICONS////////////////////////////////////*/
 
@@ -171,7 +173,7 @@ i {
 
    
 
- /* animated bars  */
+ 
  
 
 
@@ -244,18 +246,29 @@ i.fab.fa-css3-alt {
   animation-duration: 3s;
 }
 
+/*=================================================               FLEX CARDS
+=================================================*/
+#resume-content {
+  /*visibility: hidden;*/
+  background: #007e33;
+  margin: 0 auto;
+  
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit);
+  grid-gap: 10px;
+}
+
+.box {
+  background: #ccc;
+  padding: 3rem;
+  margin: 3rem;
+  box-shadow: 0 50px 55px rgba(0,0,0,.6);
+}
 
   
   
   
-  
-
-
-
-
-
-  
- 
-  
-
-
