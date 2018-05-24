@@ -1,6 +1,6 @@
 
 $('.port-item').click(function(){
-  $('.collapse').toggle('hide')
+  $('.collapse').toggle('slow')
 })
 var clicked = false;
 $('#home').click(function(){
@@ -52,7 +52,7 @@ $('#home').click(function(){
 
 							});
 
-					}, data.delay || 0 );			
+					}, data.delay || 4000 );			
 
 				});
 
