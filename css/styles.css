@@ -169,6 +169,12 @@ i {
     display: inherit;
     text-align: left;
   }
+  #resume-content {
+  display: none;
+  background: #007e33;
+  margin: 0 auto;
+  
+}
 
 
    
@@ -248,12 +254,7 @@ i.fab.fa-css3-alt {
 
 /*=================================================               FLEX CARDS
 =================================================*/
-#resume-content {
-  /*visibility: hidden;*/
-  background: #007e33;
-  margin: 0 auto;
-  
-}
+
 
 .container {
   display: grid;
@@ -268,6 +269,20 @@ i.fab.fa-css3-alt {
   margin: 3rem;
   box-shadow: 0 50px 55px rgba(0,0,0,.6);
 }
+.box hr {
+  opacity: .3;
+}
+.box p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.box ul {
+  padding: 1.0rem;
+  text-align: center;
+  line-height: 1.5
+}
+
 
   
   
