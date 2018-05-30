@@ -31,7 +31,7 @@
       <i class="fas fa-cog work"></i>
     </div>
     <div id="contact" class="port-item">
-      <i class="fas fa-paper-plane contact"></i>
+      <i class="fas fa-comment-dots"></i>
     </div>
   </div>
 
@@ -40,7 +40,7 @@
     <div class="collapse">
       <h2>About</h2>
 
-      <p class="animated slideInLeft about-me">Hey There! I'm Eric and I'm a web developer from Chattanooga Tn. I love designing websites and using emerging technology
+      <p class="animated slideInLeft about-me">Hey There! I'm Eric and I'm a web developer from Chattanooga TN. I love designing websites and using emerging technology
         to push the limit of what is possible today. In my free time you can find me hiking with my family and taking advantage
         of all the outdoor activities that Chattanooga has to offer. Being part of Gig City and the Outdoor City makes me
         proud to be a Chattanoogan</p>
@@ -90,14 +90,16 @@
   <!-- RESUME CONTENT  -->
   <div id="resume-content">
     <div class="collapse">
-      <h2>My Resume</h2>
-      <p>To download my resume just click the button below</p>
-      <form method="get" action="resume/resume.docx">
+      <form method="get" action="/resume/2018 Resume - Eric.docx">
         <button type="submit">
           <i class="fas fa-cloud-download-alt"></i> Download Resume</a>
         </button>
       </form>
+      
+     
 
+   
+      <br><br>
       <hr>
       <div class="container">
         <div class="box">
@@ -133,24 +135,117 @@
     </div>
   </div>
   <!-- WORK CONTENT -->
- >
-<div id="work-content">
-  <div class="work-container">
-  <img src="/img/port-img/colorGame.png">
-  <img src="/img/port-img/acmeWeb.png">
-  <img src="/img/port-img/github.png">
-  <img src="/img/port-img/loopLab.png">
-  <img src="/img/port-img/mountainTravel.png">
-  <img src="/img/port-img/notesApp.png">
-  <img src="/img/port-img/todo.png">
+  <section id="gallery">
+    <div class="gallery_wrapper">
+     
+      
+      <div class="gallery_items animatedParent animateOnce" data-sequence="150">
+        <a href="https://colorpickergame.netlify.com/" target="_blank"><img class="animated bounceInUp" data-id="1" src="img/port-img/colorGame.png"></a>
+
+        <a href="https://acmewebservices.netlify.com/" target="_blank"><img class="animated bounceInUp" data-id="2" src="/img/port-img/acmeWeb 1.28.29 PM.png"></a>
+
+        <a href="https://looplab-site.netlify.com/" target="_blank"><img class="animated bounceInUp" data-id="3" src="/img/port-img/loopLab 1.28.29 PM.png"></a>
+
+        <a href="https://mountain-travel.netlify.com/" target="_blank"><img class="animated bounceInUp" data-id="4" src="/img/port-img/mountainTravel 1.28.29 PM.png"></a>
+
+        <a href="https://my-notes-app.netlify.com/?_ga=2.187042283.234053401.1527694136-1419135741.1522983558" target="_blank"><img class="animated bounceInUp" data-id="5" src="/img/port-img/notesApp 1.28.29 PM.png"></a>
+
+        <a href="https://to-do.netlify.com/" target="_blank"><img class="animated bounceInUp" data-id="6" src="/img/port-img/todoList.png"></a>
+
+        <a href="https://githubfinderapp.netlify.com/?_ga=2.19884795.234053401.1527694136-1419135741.1522983558" target="_blank"><img class="animated bounceInUp" data-id="7" src="/img/port-img/github.png"></a>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- CONTACT ME  -->
+  <div id="contact-content" class="animated bounceInLeft">
+    <div class="company-info">
+      <h3 class='getMe'>Contact Me:</h3>
+      <ul>
+        <li>
+          <i class="fas fa-road"></i>7751 Palace Court</li>
+        <li>
+          <i class="fas fa-phone"></i>(423) 423-432-9466</li>
+        <li>
+          <i class="fas fa-envelope"></i>chattadev@gmail.com</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="contact">
+      <div class="alert">
+        Your Message has been sent
+      </div>
+
+      <form id="contactForm">
+        <p>
+          <label>Name:</label>
+          <input type="text" name="name" id="name" required>
+        </p>
+        <p>
+          <label>Comany:</label>
+          <input type="text" name="Company" id="company">
+        </p>
+        <p>
+          <label>Email:</label>
+          <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+          <label>Phone Number:</label>
+          <input type="phone" name="phone" id="phone" required>
+        </p>
+        <p class="full">
+          <label>Message:</label>
+          <textarea name="Message" rows="5" id="message" required></textarea>
+        </p>
+        <p class="full">
+          <button type="submit">Submit</button>
+        </p>
+
+      </form>
+
+    </div>
+  </div>
 </div>
 </div>
+</div>
+
+<footer id="footer">
+  <ul class="social-icon">
+    <li>
+      <a href="https://twitter.com/Chattdev" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+    </li>
+      
+    <li><a href="https://www.instagram.com/chattdev/" target="_blank"> <i class="fab fa-instagram fa-3x"></i></a>
+    </li>
+    <li><a href="https://github.com/erickeiser" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+    </li>
+    <li><a href="https://codepen.io/erickeiser/" target="_blank"> <i class="fab fa-codepen fa-3x"></i></a>
+    </li>
+    <li> <a href="https://www.linkedin.com/in/erickeiser/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+    </li>
+  </ul>
+</footer>
+      
+      
+     
+      
+
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/skill.js"></script>
+
+</body>
+
+</html>
+
+
 
 
 
   
-  </div>
-  </div>
 
 
 
@@ -168,29 +263,3 @@
 
 
 
-
-  <footer id="footer">
-    <ul class="social-icon">
-      <li>
-        <i class="fab fa-twitter fa-3x"></i>
-      </li>
-      <li>
-        <i class="fab fa-instagram fa-3x"></i>
-      </li>
-      <li>
-        <i class="fab fa-github fa-3x"></i>
-      </li>
-      <li>
-        <i class="fab fa-codepen fa-3x"></i>
-      </li>
-      <li>
-        <i class="fab fa-linkedin fa-3x"></i>
-      </li>
-    </ul>
-  </footer>
-
-  <script src="/js/main.js"></script>
-  <script src="/js/skill.js"></script>
-</body>
-
-</html>
