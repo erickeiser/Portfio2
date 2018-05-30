@@ -281,145 +281,27 @@ i.fab.fa-css3-alt {
   line-height: 1.5
 }
 
+
+
+
 /* Work section */
-/*--------------------------------------------------------------
-CSS Reset
---------------------------------------------------------------*/
-html {
-  font-family: sans-serif;
-  font-size: 1em;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
 
-body {
+
+html, body {
   margin: 0;
-}
-
-img {
-  border: 0;
-  width: 100%;
-  height: 100%;
-}
-
-* {
-  display: border-box;
-}
-
-/*--------------------------------------------------------------
-Accessibility
---------------------------------------------------------------*/
-/* Text meant only for screen readers */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.screen-reader-text:hover,
-.screen-reader-text:active,
-.screen-reader-text:focus {
-  background-color: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  clip: auto !important;
-  color: #21759b;
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  height: auto;
-  left: 5px;
-  line-height: normal;
-  padding: 15px 23px 14px;
-  text-decoration: none;
-  top: 5px;
-  width: auto;
-  z-index: 100000;
-  /* Above WP toolbar */
-}
-
-/*--------------------------------------------------------------
-Typography
---------------------------------------------------------------*/
-body {
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  line-height: 1.45;
+  padding: 0 10px;
+  font-family: monospace;
   color: #333;
 }
 
-p {
-  margin-bottom: 1.3em;
-}
-
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 3.157em;
-}
-
-h2 {
-  font-size: 2.369em;
-}
-
-h3 {
-  font-size: 1.777em;
-}
-
-h4 {
-  font-size: 1.333em;
-}
-
-small, .font_small {
-  font-size: 0.75em;
-}
-
-.intro {
-  background: tomato;
-  width: 100%;
-  content: "";
-  color: white;
-  text-align: center;
-}
-.intro h1 {
-  padding: 1em;
-}
-
-.card--wrapper {
+.work-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 1rem;
-  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  grid-gap: 5px;
 }
-.card--wrapper .card {
-  box-shadow: 0px 1px 5px #555;
-  background-color: white;
-  text-align: center;
-}
-.card--wrapper .card .card--thumbnail > img {
-  height: 100%;
+
+.work-container img {
+  min-height: 100%;
   max-width: 100%;
-}
-.card--wrapper .card .card--description {
-  padding: 1rem 0.5rem;
-}
-.card--wrapper .card .card--button {
-  display: block;
-  background-color: tomato;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  transition: 0.3s ease-out;
-}
-.card--wrapper .card .card--button:hover {
-  background-color: #ff3814;
+  border-radius: 5px;
 }
